@@ -1,0 +1,10 @@
+<h1>home</h1>
+
+<ul>
+  {{#each users}}
+    {{#compare age ">" 22}}
+      <li>Name: {{ name }}, Age: {{ age }}</li>
+    {{/compare}}
+  {{/each}}
+</ul>
+<button type="button" class="btn btn-primary">Primary</button>
